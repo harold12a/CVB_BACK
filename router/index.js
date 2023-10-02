@@ -1,7 +1,12 @@
-import { Router} from 'express'
-import clientesRouter from './clientes.js'
+import { Router } from 'express'
+
+import authRouter from './auth.js'
+// import usersRouter from './users.js'
 
 let indexRouter = Router()
-indexRouter.use('/clientes', clientesRouter)
+
+
+indexRouter.use('/auth', authRouter)
+// indexRouter.use('/users', usersRouter)
 
 export default indexRouter
