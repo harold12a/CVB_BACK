@@ -9,6 +9,7 @@ import passport from '../middlewares/passport.js';
 let noticiasRouter = Router()
 
 noticiasRouter.get('/', read)
+noticiasRouter.get('/:_id', read)
 noticiasRouter.post('/', passport.authenticate('jwt', { session: false }), create)
 noticiasRouter.put('/:id', passport.authenticate('jwt', { session: false }), update)
 noticiasRouter.delete('/:id', passport.authenticate('jwt', { session: false }), destroy)

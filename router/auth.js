@@ -19,7 +19,7 @@ let authRouter = Router();
 
 authRouter.post('/signin', validator(schemaSingIn), accountExistsSignIn, isValidPassWord, getToken, singIn)
 authRouter.post('/signup', validator(schemaSingUp), accountExistsSignUp, createhash, singUp)
-authRouter.post('/singout', passport.authenticate('jwt', { session: false }), singout)
+authRouter.put('/singout', passport.authenticate('jwt', { session: false }), singout)
 authRouter.post('/token', passport.authenticate('jwt', { session: false }), getToken, singInToken)
 
 export default authRouter;
