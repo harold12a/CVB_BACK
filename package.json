@@ -8,7 +8,11 @@
     "start": "node ./server.js",
     "dev": "nodemon ./server.js",
     "users": "node ./models/data/users.js",
-    "noticias": "node ./models/data/noticias.js"
+    "noticias": "node ./models/data/noticias.js",
+    "course": "node ./models/data/course.js",
+    "extinguisher": "node ./models/data/extinguisher.js",
+    "training": "node ./models/data/training.js",
+    "post": "node ./models/data/post.js"
   },
   "author": "",
   "license": "ISC",
