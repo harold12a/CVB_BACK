@@ -6,7 +6,7 @@ export default async (req, res, next) => {
         if (all.length) {
             // Modificar la respuesta para agregar _id a cada objeto de noticia
             const postWithId = all.map((post) => ({
-                _id: course._id,
+                _id: post._id,
                 title: post.title,
                 date: post.date,
                 description: post.description,

@@ -1,6 +1,6 @@
 import { Schema, model } from 'mongoose'
 
-let collection = 'curso'
+let collection = 'cursos'
 let schema = new Schema({
     title: { type: String, required: true },
     date: { type: Date, required: true },
