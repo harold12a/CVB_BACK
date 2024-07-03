@@ -4,8 +4,8 @@ import User from '../User.js'
 import bcrypt from 'bcryptjs'
 
 let users = [{
-    email: "harold@bomberosbuga.co",
-    password: "bomberos1234",
+    email: "admin@bomberosbuga.co",
+    password: "bomberos2475",
     role: 1,
     photo: "https://i.postimg.cc/fyJsspq8/image.png"
 }]
